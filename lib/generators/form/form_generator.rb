@@ -4,4 +4,6 @@ class FormGenerator < Rails::Generators::NamedBase
   def create_form_file
     template 'form.erb', File.join('app/forms', class_path, "#{file_name}_form.rb")
   end
+
+  hook_for :test_framework
 end
