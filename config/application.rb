@@ -34,5 +34,10 @@ module GeneratorHookInvestigation
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Don't generate assets, helpers, or the scaffold stylesheet
+    config.generators.assets = false
+    config.generators.helper = false
+    config.generators.scaffold_stylesheet = false
   end
 end
