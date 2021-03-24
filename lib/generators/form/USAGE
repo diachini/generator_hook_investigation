@@ -1,8 +1,8 @@
 Description:
-    Explain the generator
+    This generates a form to be used by controllers
 
 Example:
     bin/rails generate form Thing
 
     This will create:
-        what/will/it/create
+        app/forms/thing_form.rb
