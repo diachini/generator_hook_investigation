@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
 class <%= singular_table_name.camelize %>Form
+  # This form will deal with these attributes: <%= attributes.map{ |attribute| ":#{attribute.name}" }.join(', ') %>
 end
