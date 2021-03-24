@@ -1,0 +1,21 @@
+h1 Listing things
+
+table
+  thead
+    tr
+      th Name
+      th
+      th
+      th
+
+  tbody
+    - @things.each do |thing|
+      tr
+        td = thing.name
+        td = link_to 'Show', thing
+        td = link_to 'Edit', edit_thing_path(thing)
+        td = link_to 'Destroy', thing, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Thing', new_thing_path
