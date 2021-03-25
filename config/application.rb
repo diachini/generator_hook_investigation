@@ -39,5 +39,9 @@ module GeneratorHookInvestigation
     config.generators.assets = false
     config.generators.helper = false
     config.generators.scaffold_stylesheet = false
+
+    config.generators do |g|
+      require './lib/generators/rails/form/hooks'
+    end
   end
 end
