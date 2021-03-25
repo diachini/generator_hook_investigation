@@ -1,4 +1,4 @@
-class FormGenerator < Rails::Generators::NamedBase
+class Rails::Generators::FormGenerator < Rails::Generators::NamedBase
   source_root File.expand_path('templates', __dir__)
   check_class_collision suffix: 'Form'
 
