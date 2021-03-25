@@ -39,5 +39,9 @@ module GeneratorHookInvestigation
     config.generators.assets = false
     config.generators.helper = false
     config.generators.scaffold_stylesheet = false
+
+    config.generators do
+      require 'generators/rails/resource_override'
+    end
   end
 end
