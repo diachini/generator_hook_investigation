@@ -2,7 +2,7 @@
 
 module Rspec
   module Generators
-    class CustomFormObjectGenerator < Rails::Generators::NamedBase
+    class FormGenerator < Rails::Generators::NamedBase
       source_root File.expand_path('templates', __dir__)
 
       def copy_form_spec_file
